@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div class="todoCard">
+        <h4 [ngClass]="{'strike': this.check}">Title: <span>{{ todo.title }}</span></h4>
+        <h5 [ngClass]="{'strike': this.check}">Description: <span>{{ todo.description }}</span></h5>
+        <div class="form-group form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1" (change)="onCheckClick($event)">
+          <label class="form-check-label" for="exampleCheck1">Mark As Done</label>
+        </div>
+        <button class="btn btn-danger btn-sm mt-2" (click)="onDelete(todo)">Delete</button>
+      </div>
+    </div>
+  </div>
+</div>

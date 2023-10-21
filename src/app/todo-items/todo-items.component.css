@@ -1,0 +1,18 @@
+.container {
+    color: white;
+    background-color: rgba(26, 26, 26, 0.568);
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.todoCard {
+    min-width: 200px;
+    border: 1px solid #dddd;
+    border-radius: 10px;
+    padding: 16px;
+    margin: 24px 0;
+}
+
+.strike {
+    text-decoration: line-through;
+}
